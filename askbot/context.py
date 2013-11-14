@@ -61,8 +61,9 @@ def application_settings(request):
         my_settings['TINYMCE_PLUGINS'] = [];
 
     my_settings['LOGOUT_REDIRECT_URL'] = url_utils.get_logout_redirect_url()
-    my_settings['USE_ASKBOT_LOGIN_SYSTEM'] = 'askbot.deps.django_authopenid' \
-        in settings.INSTALLED_APPS
+#    my_settings['USE_ASKBOT_LOGIN_SYSTEM'] = 'askbot.deps.django_authopenid' \
+#        in settings.INSTALLED_APPS
+    my_settings['USE_ASKBOT_LOGIN_SYSTEM'] = False
     
     current_language = get_language()
 
