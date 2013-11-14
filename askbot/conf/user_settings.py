@@ -37,7 +37,7 @@ settings.register(
     livesettings.BooleanValue(
         USER_SETTINGS,
         'EDITABLE_SCREEN_NAME',
-        default = True,
+        default = False,
         description = _('Allow editing user screen name')
     )
 )
